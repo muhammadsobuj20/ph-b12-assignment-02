@@ -77,3 +77,34 @@ color: #000;
 .dark{
     color: #00000080;
 }
+
+
+
+/* banner section styles */
+.banner{
+margin-top: 70px;
+align-items:last baseline ;
+}
+
+.banner-content{
+
+}
+
+#special{
+    color: var(--primary-color);
+}
+.banner-title{
+color: var(--seccolor);
+font-size: 4rem;
+font-weight: 700;
+}
+
+.banner-description{
+color: var(--dark-color);
+font-size: 1.3rem;
+font-weight: 400;
+}
+
+.banner-profile{
+
+}
