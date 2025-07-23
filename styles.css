@@ -2,5 +2,34 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/* font family */
+.noto-serif{
+      font-family: "Noto Serif";
+}
+
+.inter{
+      font-family: "Inter";
+}
+
+/* color  */
+:root{
+    --primary-color: #E95A08; 
+    --seccolor: #000;
+    --dark-color:#00000080
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
 }
