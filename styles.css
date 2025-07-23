@@ -13,6 +13,10 @@
 
 
 
+
+/* shared styles */
+
+
 /* font family */
 .noto-serif{
       font-family: "Noto Serif";
@@ -26,10 +30,50 @@
 :root{
     --primary-color: #E95A08; 
     --seccolor: #000;
-    --dark-color:#00000080
+    --dark-color:#00000080;
 }
 
 .container{
     max-width: 1140px;
     margin: 0 auto;
+}
+  
+.display-flex{
+display: flex;
+}
+
+
+
+/* navbar styles */
+.navbar{
+align-items: center;
+justify-content: space-between;
+
+}
+
+.nav-links{
+align-items: center;
+justify-content: space-between;
+gap: 30px;
+font-weight: 400;
+}
+
+.nav-list{
+list-style: none;
+
+}
+
+.link{
+text-decoration: none;
+}
+
+.home{
+    color: #000;
+    font-weight: 700;
+}
+.cart{
+color: #000;
+}
+.dark{
+    color: #00000080;
 }
