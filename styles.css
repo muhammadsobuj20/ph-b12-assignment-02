@@ -1,298 +1,367 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* shared styles */
 
-
 /* font family */
-.noto-serif{
-      font-family: "Noto Serif";
+.noto-serif {
+  font-family: "Noto Serif";
 }
 
-.inter{
-      font-family: "Inter";
+.inter {
+  font-family: "Inter";
 }
 
 /* color  */
-:root{
-    --primary-color: #E95A08; 
-    --seccolor: #000;
-    --dark-color:#00000080;
+:root {
+  --primary-color: #e95a08;
+  --seccolor: #000;
+  --dark-color: #00000080;
 }
 
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
-}
-  
-.display-flex{
-display: flex;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-
+.display-flex {
+  display: flex;
+}
 
 /* navbar styles */
-.navbar{
-align-items: center;
-justify-content: space-between;
-
+.navbar {
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav-links{
-align-items: center;
-justify-content: space-between;
-gap: 30px;
-font-weight: 400;
+.nav-links {
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  font-weight: 400;
 }
 
-.nav-list{
-list-style: none;
-
+.nav-list {
+  list-style: none;
 }
 
-.link{
-text-decoration: none;
+.link {
+  text-decoration: none;
 }
 
-.home{
-    color: #000;
-    font-weight: 700;
+.home {
+  color: #000;
+  font-weight: 700;
 }
-.cart-style a{
-text-decoration: none;
-list-style: none;
-color: #000;
-}
-
-.cart-style{
-    list-style: none;
-    
+.cart-style a {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
 }
 
-.dark{
-    color: #00000080;
+.cart-style {
+  list-style: none;
 }
 
-
+.dark {
+  color: #00000080;
+}
 
 /* banner section styles */
-.banner{
-margin-top: 70px;
-align-items:last baseline ;
+.banner {
+  margin-top: 70px;
+  align-items: last baseline;
 }
 
-
-.special{
-    color: var(--primary-color);
+.special {
+  color: var(--primary-color);
 }
 
-.banner-title{
-color: var(--seccolor);
-font-size: 4rem;
-font-weight: 700;
+.banner-title {
+  color: var(--seccolor);
+  font-size: 4rem;
+  font-weight: 700;
 }
 
-.banner-description{
-color: var(--dark-color);
-font-size: 1.3rem;
-font-weight: 400;
+.banner-description {
+  color: var(--dark-color);
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 /* main section styles */
 /* our plants section styles */
 
-.main > section{
-    margin-top: 70px;
+.main > section {
+  margin-top: 70px;
 }
-.our-plants-section{
-    text-align: center;
-}
-
-.plants-title{
-font-size: 3.1rem;
-font-weight: 700;
-
-}
-.plants-description{
-color: var(--dark-color);
-font-weight: 400;
+.our-plants-section {
+  text-align: center;
 }
 
+.plants-title {
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+.plants-description {
+  color: var(--dark-color);
+  font-weight: 400;
+}
 
 /* cart styles */
-.cart{
-margin-top: 50px;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 20px;
+.cart {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
-.cart-content{
-text-align: center;
-}
-
-.cart-title{
-font-size: 1.3rem;
-font-weight: 500;
-color: var(--seccolor);
+.cart-content {
+  text-align: center;
 }
 
-.cart-price{
-font-size: 1.3rem;
-font-weight: 700;
-color: var(--seccolor);
+.cart-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--seccolor);
 }
 
-.btn-cart{
-padding: 26px 50px;
-color: #fff;
-font-size: 600;
-width: 100%;
-text-align: center;
-background-color: var(--primary-color);
-border: none;
-margin-top: 12px;
-transition: background-color 0.4s ease-in-out;
+.cart-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--seccolor);
 }
 
-.btn-cart:hover{
-    background-color: #6f05face;
-    cursor: pointer;
+.btn-cart {
+  padding: 26px 50px;
+  color: #fff;
+  font-size: 600;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  border: none;
+  margin-top: 12px;
+  transition: background-color 0.4s ease-in-out;
 }
 
-
+.btn-cart:hover {
+  background-color: #6f05face;
+  cursor: pointer;
+}
 
 /* Flower & Plants Lover section */
-.wrapper-flowers-plants{
-justify-content: center;
-gap: 50px;
-flex-grow: 1;
-position: relative;
-margin-top: 170px;
+.wrapper-flowers-plants {
+  justify-content: center;
+  gap: 50px;
+  flex-grow: 1;
+  position: relative;
+  margin-top: 170px;
 }
 
-.wrapper-flowers-plants img{
-width: 100%;
-height: 597px;
-
+.wrapper-flowers-plants img {
+  width: 100%;
+  height: 597px;
 }
 
-.flower-content{
- margin-top: 35px;
- /* width: 45%; */
-
+.flower-content {
+  margin-top: 35px;
+  /* width: 45%; */
 }
 
-.flower-title{
-font-size: 3.1rem;
-font-weight: 700;
-color: var(--seccolor);
-margin-left: 7px;
-margin-bottom: 10px;
+.flower-title {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: var(--seccolor);
+  margin-left: 7px;
+  margin-bottom: 10px;
 }
 
-.flower-description{
-display: grid;
- grid-template-rows: repeat(3, 1fr);
- gap: 70px;
- font-size: 1.3rem;
-font-weight: 400;
-color: var(--dark-color);
-margin-left: 35px;
-
+.flower-description {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 70px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--dark-color);
+  margin-left: 35px;
 }
 
-
-.trusted-badge{
-position: absolute;
-top: 205%;
-left: 18%;
-transform: translateX(150%) translateY(200%);
+.trusted-badge {
+  position: absolute;
+  top: 205%;
+  left: 18%;
+  transform: translateX(150%) translateY(200%);
 }
 
-.trusted-badge img{
-    width: 250px;
-    height: 250px;
+.trusted-badge img {
+  width: 250px;
+  height: 250px;
 }
 
 
 
 
+/* Lalest Deals styles */
+.wrapper-lalest-deals-container {
+  color: #fff;
+  gap: 32px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.bloom-plants {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+   border-radius: 12px;
+}
+
+.bloom-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.bloom-plants img {
+  /* width: 100%; */
+  border-radius: 12px;
+}
+.bloom-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.bloom-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.ana-plants {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  overflow: hidden;
+}
+
+.ana-plants img {
+  /* width: 100%; */
+  border-radius: 12px;
+}
+
+.ana-content {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  transform: translateX(50%) translateY(30%);
+}
+
+.zabo-plant {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.zabo-content {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translateX(10%) translateY(40%);
+}
+
+.zabo-plant img {
+  border-radius: 12px;
+}
+
+.zabo-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.zabo-plant p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
 
 /* media quires for mobiles */
-@media screen and (max-width:576px) {
-    body{
-        margin: 0 auto;
-    }
-    
-   .nav-list{
- visibility: hidden;
-   }
-   .cart-style{
-       visibility: visible; 
-    
-}
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0 auto;
+  }
 
+  .nav-list {
+    visibility: hidden;
+  }
+  .cart-style {
+    visibility: visible;
+  }
 
-.banner{
+  /* banner */
+  .banner {
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
-}
+  }
 
-.banner-content{
+  .banner-content {
     text-align: left;
     width: 100%;
-}
-.banner-profile img{
+  }
+  .banner-profile img {
     width: 100%;
-}
+  }
 
-
-
-/* cart */
-.cart-content{
+  /* cart */
+  .cart-content {
     text-align: center;
     width: 100%;
-}
+  }
 
-.cart{
+  .cart {
     grid-template-columns: repeat(2, 1fr);
-
-}
- .cart-content img{
+  }
+  .cart-content img {
     width: 100%;
- }
+  }
 
- /* flowers plants */
-.wrapper-flowers-plants{
-flex-direction: column;
-margin-top: 20px;
-}
+  /* flowers plants */
+  .wrapper-flowers-plants {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
-.flower-content{
-margin-top: 20px;
-}
-.flower-description{
- grid-template-columns: repeat(1, 1fr);
- width: 100%;
- gap: 30px;
-}
+  .flower-content {
+    margin-top: 20px;
+  }
+  .flower-description {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    gap: 30px;
+  }
 
-.trusted-badge{
+  .trusted-badge {
     visibility: hidden;
-}
-
+  }
 }
