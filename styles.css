@@ -185,7 +185,7 @@
 .flower-description {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 70px;
+  gap: 60px;
   font-size: 1.3rem;
   font-weight: 400;
   color: var(--dark-color);
@@ -194,18 +194,31 @@
 
 .trusted-badge {
   position: absolute;
-  top: 205%;
-  left: 18%;
-  transform: translateX(150%) translateY(200%);
+  top: -17%;
+  right: 33%;
+  /* transform: translate(-50%, 50%); */
+  
+}
+.trusted-badge{
+animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .trusted-badge img {
-  width: 250px;
+  width: 100%;
   height: 250px;
 }
 
-
-
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Lalest Deals styles */
 .wrapper-lalest-deals-container {
@@ -221,7 +234,7 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
-   border-radius: 12px;
+  border-radius: 12px;
 }
 
 .bloom-content {
@@ -237,7 +250,7 @@
   left: 0%;
   right: 0%;
   bottom: 0%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
 }
 
@@ -248,6 +261,8 @@
 .bloom-title {
   font-size: 1.2rem;
   font-weight: 700;
+  width: 200px;
+  padding: 2px;
 }
 
 .bloom-content p {
@@ -275,6 +290,12 @@
   transform: translateX(50%) translateY(30%);
 }
 
+.ana-content p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .zabo-plant {
   position: relative;
   width: 100%;
@@ -285,9 +306,9 @@
 
 .zabo-content {
   position: absolute;
-  top: 40%;
-  left: 30%;
-  transform: translateX(10%) translateY(40%);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .zabo-plant img {
@@ -299,11 +320,122 @@
   font-weight: 700;
 }
 
-.zabo-plant p {
+.zabo-content p {
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: underline;
 }
+
+
+/* Join the colorful Bunch */
+.bg-img{
+background-image: url(./assets/news-letter-bg.png);
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+height: 400px;
+margin-top: 80px;
+}
+
+
+.join-section{
+text-align: center;
+max-width: 1140px;
+margin: 0 auto;
+padding-top: 120px;
+}
+
+.join-title{
+font-size: 3rem;
+font-weight: 700;
+color: #fff;
+
+}
+
+
+.join-input{
+justify-content: center;
+align-items: center;
+margin-top: 15px;
+}
+
+.join-input input{
+padding: 8px 50px;
+border: none;
+background-color: #fff;
+text-align: left;
+width: 550px;
+
+}
+
+
+.btn-subscribe{
+  padding: 8px 50px;
+border: none;
+background-color: #e95a08;
+}
+
+/* footer */
+footer{
+margin-top: 70px;
+margin-bottom: 70px;
+}
+.footer-section{
+max-width: 1140px;
+margin: 0 auto;
+justify-content: center;
+gap: 50px;
+}
+
+.logo{
+
+}
+.logo p{
+color: var(--dark-color);
+font-weight: 500;
+}
+
+.footer-links{
+ line-height: 32px;
+ list-style: none;
+ 
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.footer-links a:hover{
+  border-bottom: 2px solid var(--dark-color);
+}
+
+.footer-features-links{
+line-height: 32px;
+ list-style: none;
+ 
+}
+
+
+.footer-features-links a{
+   text-decoration: none;
+  color: var(--dark-color);
+}
+
+.footer-features-links a:hover{
+  border-bottom: 2px solid var(--dark-color);
+}
+
+
+.footer-icon{
+gap: 32px;
+}
+
+
+
+
+
+
 
 /* media quires for mobiles */
 @media screen and (max-width: 576px) {
@@ -363,5 +495,27 @@
 
   .trusted-badge {
     visibility: hidden;
+  }
+
+  /* bloom & ana  */
+  .wrapper-lalest-deals-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .bloom-plants img {
+    width: 100%;
+  }
+
+  .ana-plants img {
+    width: 100%;
+    border-radius: none;
+  }
+
+  .join-input{
+    flex-direction: column;
+  }
+
+  .btn-subscribe{
+    margin-top: 10px;
   }
 }
