@@ -22,11 +22,11 @@
           <li class="nav-list"><a href="#" class="link home">Home</a></li>
           <li class="nav-list"><a href="#" class="link dark">Shop</a></li>
           <li class="nav-list"><a href="#" class="link dark">About Us</a></li>
-          <li class="cart-style"><a href="#">
+          <li class="cart-style display-flex"><a href="#">
             <span><i class="fa-solid fa-cart-plus"></i>
             </span>
-            <span>Cart</span>
-            </span><span>($37)</span>
+            <span>Cart ($37)</span>
+            </span><span></span>
           </a>
           </li>
         
@@ -68,12 +68,12 @@
         </div>
 
         <!-- cart -->
-        <div class="cart">
-          <div class="cart-content noto-serif">
+        <div class="cart inter">
+          <div class="cart-content ">
             <img src="./assets/sample-flower-image.png" alt="flower for cart" />
             <h3 class="cart-title">Lily Blossom</h3>
             <h3 class="cart-price">34 USD</h3>
-            <button class="btn-cart">ADD TO CART</button>
+            <button onclick="myFunction()" class="btn-cart">ADD TO CART</button>
           </div>
           <div class="cart-content">
             <img src="./assets/sample-flower-image.png" alt="flower for cart" />
@@ -234,5 +234,12 @@
 </div>  
 </div>
     </footer>
+
+    <script>
+      function myFunction(){
+        alert("Add To Cart")
+      }
+       alert("Hey! Welcome My Simple Responsiv Website");
+    </script>
   </body>
 </html>

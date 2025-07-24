@@ -428,9 +428,9 @@ footer {
 
 /* media quires for mobiles */
 @media screen and (max-width: 576px) {
-  body {
+  /* body {
     margin: 0 10px;
-  }
+  } */
 
   .nav-list {
     visibility: hidden;
@@ -442,13 +442,13 @@ footer {
   /* banner */
   .banner {
     flex-direction: column-reverse;
-    width: 100%;
+    /* width: 100%; */
     align-items: center;
   }
 
   .banner-content {
     text-align: left;
-    width: 100%;
+    /* width: 100%; */
   }
   .banner-profile img {
     width: 100%;
@@ -457,7 +457,7 @@ footer {
   /* cart */
   .cart-content {
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .cart {
@@ -478,7 +478,7 @@ footer {
   }
   .flower-description {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    /* width: 100%; */
     gap: 30px;
   }
 
@@ -489,7 +489,7 @@ footer {
   /* bloom & ana  */
   .wrapper-lalest-deals-container {
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
   }
   .bloom-plants img {
     width: 100%;
